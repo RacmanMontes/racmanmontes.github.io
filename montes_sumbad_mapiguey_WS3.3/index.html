@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosuey Shop - Worksheet 3.3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myList li").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header container-fluid p-3 mb-4">
+        <div class="container">
+            <h3><i class="fas fa-laptop-code mr-2"></i> EL5 - Mobile App Dev: Hybrid</h3>
+        </div>
+    </header>
+    
+    <main class="container">
+        <h4 class="page-title">Worksheet 3.3: Mosuey Shop</h4>
+        
+        <div class="team-section">
+            <h5 class="team-title"><i class="fas fa-users mr-2"></i>Group Members</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                     <a href="">   <img src="https://scontent.fcrk2-1.fna.fbcdn.net/v/t51.75761-15/476504248_17963162795848797_4714569649908145849_n.jpg?stp=c0.89.1080.1080a_dst-jpg_s206x206_tt6&_nc_cat=102&ccb=1-7&_nc_sid=714c7a&_nc_eui2=AeFnkTTxr1o2UhIpahltr0I8Eb01_xVL5AURvTX_FUvkBVYzt6GN34QPkHuEpdM62RQ-U7zhsC91iWL4Ps1QcvY7&_nc_ohc=m0voGwYe4osQ7kNvwGweb0x&_nc_oc=AdnpcBpGKy0zsj_h6iv31VKy8LN2Spun3xqPktHas26vPl60mB__83X10smXjuWVcCs&_nc_zt=23&_nc_ht=scontent.fcrk2-1.fna&_nc_gid=8ScKlnGGrj-LwoqyzyRl0g&oh=00_AfG6cWDntgTEqRboyCGzOGafY1gT7BWVNFLSRorlvLfZFA&oe=680D4AE0" alt="Jeromey"></a>
+                        <div>
+                            <h6 class="mb-0">Mapiguey Jeromey</h6>
+                            <small class="text-muted">Developer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                    <a href="">    <img src="https://scontent.fcrk2-3.fna.fbcdn.net/v/t39.30808-1/481995810_1174045710769729_6855894188015409996_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeEr0ZXKzawk3VcPPWQurhWojP0H3P-cjPqM_Qfc_5yM-jwL1tZxPmLb_0PCSARumsV361xLPZ6fJPx9UlIFCTsq&_nc_ohc=uck1dhwSoLoQ7kNvwEjRVmF&_nc_oc=AdmZOo_hjFMw_JwqRf_CCETwRU4UJ4Pa8tLUSZjKfxsZInlIVaO12YSxiHlRt79Ff-8&_nc_zt=24&_nc_ht=scontent.fcrk2-3.fna&_nc_gid=aYEx6ZMZzS-6xyqOdLtGFw&oh=00_AfFOqjRZL8fn7ZgisTQj9NkPNd5sdRO1_DYZkq3ItLYvPQ&oe=680D4302" alt="Lhenard"></a>
+                        <div>
+                            <h6 class="mb-0">Sumbad Lhenard</h6>
+                            <small class="text-muted">Developer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                     <a href="">   <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-1/490031653_1192629048983377_7326732168404751780_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGgKmF85AMtb93qxQTWEHSAXZ-91uYpJchdn73W5iklyHmf_a97O41Lr7uBGFsE_H4BY4bYp6EM0J4PKSMlnCXB&_nc_ohc=sLHmrtHYKioQ7kNvwGfEMkT&_nc_oc=AdnE1-E_ykKgEWhsb4v4JMqoTH_P_8OQy69Qhq92QEP1JxOYd6jmbfKnPWSCJ-esbXI&_nc_zt=24&_nc_ht=scontent.fcrk4-1.fna&_nc_gid=xGil8UEISXWZNVUc_a7Eng&oh=00_AfGmgQm7FzsAlES7KZ4P8titDODCTcPTg9d5HdH1b7FEhw&oe=680D5108" alt="Racman"></a>
+                        <div>
+                            <h6 class="mb-0">Montes Racman</h6>
+                            <small class="text-muted">Developer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input id="myInput" type="text" class="form-control" placeholder="Search products...">
+                </div>
+                
+                <ul id="myList" class="row list-unstyled">
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage1" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image1">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname1">Wireless Bluetooth Headphones</h4>
+                                <p class="price">₱<span id="fruitprice1">150.00</span> <small class="text-muted" id="fruitunit1" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="1">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage2" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image2">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname2">Smart Watch Pro</h4>
+                                <p class="price">₱<span id="fruitprice2">599.00</span> <small class="text-muted" id="fruitunit2" name="Only">Only</small></p><br>
+                                <a href="#" class="btn btn-primary addtocart" id="2">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage3" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname3">Organic Cotton T-shirt</h4>
+                                <p class="price">₱<span id="fruitprice3">250.00</span> <small class="text-muted" id="fruitunit3" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="3">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage4" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image4">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname4">Stainless Steel Water Bottle  </h4>
+                                <p class="price">₱<span id="fruitprice4">180.00</span> <small class="text-muted" id="fruitunit4" name="Only">Only</small></p><br>
+                                <a href="#" class="btn btn-primary addtocart" id="4">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage5" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1515442261605-65987783cb6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image5">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname5">Premium Coffee Beans</h4>
+                                <p class="price">₱ <span id="fruitprice5">90.00</span> <small class="text-muted" id="fruitunit5" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="5">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage6" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image6">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname6">Wireless Charging Pad</h4>
+                                <p class="price">₱ <span id="fruitprice6">400.00</span> <small class="text-muted" id="fruitunit6" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="6">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage7" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="image7">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname7">Facial Care Set</h4>
+                                <p class="price">₱ <span id="fruitprice7">250.00</span> <small class="text-muted" id="fruitunit7" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="7">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage8" class="img-fluid mx-auto" src="https://cdn.store-assets.com/s/377840/i/32382116.jpg" alt="papaya">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname8">Mens facial Wash</h4>
+                                <p class="price">₱ <span id="fruitprice8">180.00</span> <small class="text-muted" id="fruitunit8" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="8">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage8" class="img-fluid mx-auto" src="https://down-ph.img.susercontent.com/file/ph-11134207-7ras9-m1m4hspznv0e59" alt="papaya">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname8">Dove facial Wash</h4>
+                                <p class="price">₱ <span id="fruitprice8">280.00</span> <small class="text-muted" id="fruitunit8" name="Only">Only</small></p>
+                                <a href="#" class="btn btn-primary addtocart" id="8">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage8" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="papaya">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname8">Yoga Mat</h4>
+                                <p class="price">₱ <span id="fruitprice8">350.00</span> <small class="text-muted" id="fruitunit8" name="Only">Only</small></p><br>
+                                <a href="#" class="btn btn-primary addtocart" id="8">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage8" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1548032885-b5e38734688a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname8">Lether Wallet</h4>
+                                <p class="price">₱ <span id="fruitprice8">400.00</span> <small class="text-muted" id="fruitunit8" name="Only">Only</small></p><br>
+                                <a href="#" class="btn btn-primary addtocart" id="8">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-card card h-100">
+                            <div class="d-flex align-items-center" style="height: 180px;">
+                                <img id="fruitimage8" class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="papaya">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="fruitname8">Airbuds</h4>
+                                <p class="price">₱ <span id="fruitprice8">180.00</span> <small class="text-muted" id="fruitunit8" name="Only">Only</small></p><br>
+                                <a href="#" class="btn btn-primary addtocart" id="8">Add to Cart <i class="fas fa-cart-plus ml-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class="cart-card card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0"><i class="fas fa-shopping-cart mr-2"></i>Shopping Cart</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="h-50 d-flex align-items-center justify-content-center mb-3">
+                            <img id="fruitimage" class="img-fluid" src="" alt="" style="max-height: 150px; display: none;">
+                        </div>
+                        <h4 class="card-title" id="fruitname"></h4>
+                        <div id="tohide">
+                            <p class="card-text mb-2" id="fruitprice"></p>
+                            <div class="form-group">
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" min="1" id="quantity" value="1" class="form-control d-inline-block" style="width: 80px;">
+                                <span class="card-text" id="fruitunit"></span>
+                            </div>
+                            <input type="hidden" id="price">
+                            <a href="#" class="btn btn-danger btn-block mt-3">Proceed to Checkout</a>
+                            <div class="total-price mt-3">
+                                Total: <span id="total"></span>
+                            </div>
+                        </div>
+                        <div id="empty-cart" class="text-center py-4">
+                            <i class="fas fa-shopping-cart fa-3x mb-3"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <hr>
+            <p class="mb-1">Submitted to: <strong>Jim-mar Delos Reyes</strong></p>
+            <small>Instructor</small>
+        </div>
+    </footer>
+    
+   <script src="script.js"></script>
+</body>
+</html>
